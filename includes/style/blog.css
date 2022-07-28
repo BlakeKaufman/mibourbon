@@ -291,6 +291,9 @@ button {
   }
 }
 @media screen and (max-width: 450px) {
+  .blog .container{
+    width: 95%;
+  }
   .blog .container .navigation {
     flex-direction: column;
     height: 25vh;
