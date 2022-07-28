@@ -319,6 +319,9 @@ button {
     overflow: unset;
   }
   /* next section */
+  .blog .container .content{
+    width: 100%;
+  }
   .blog .container .content .left h4 {
     font-size: 7.5vw;
     text-align: center;
