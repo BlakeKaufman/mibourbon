@@ -1,5 +1,4 @@
 body {
-  font: normal normal medium 64px/82px FreightBig Pro;
   background-image: url("../images/back/back.png");
   background-size: cover;
   background-position: bottom;
@@ -370,6 +369,7 @@ button {
   }
   input[type="checkbox"] {
     align-self: baseline;
+    margin-top: 2vh;
   }
   .cpta {
     width: 76%;
