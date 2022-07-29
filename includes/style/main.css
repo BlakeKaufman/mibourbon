@@ -912,7 +912,7 @@ form .submitBtn {
 }
 .newsAndEvents .background {
   width: 100vw;
-  height: auto;
+  height: inherit;
   position: absolute;
   object-fit: cover;
   object-position: center;
@@ -976,7 +976,7 @@ form .submitBtn {
   height: 20vh;
   opacity: 1;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
 }
 .newsAndEvents .container .date {
   text-align: left;
