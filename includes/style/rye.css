@@ -151,6 +151,7 @@ body {
 @media screen and (max-width: 770px) {
   .whiskey .container {
     width: 95%;
+    margin-top: 20vh;
   }
   .title {
     width: 58vw;
