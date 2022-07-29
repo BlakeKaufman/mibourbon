@@ -1277,8 +1277,8 @@ footer .checkbox {
   height: 20%;
 }
 .varification .submitBtn {
-  width: 40%;
-  height: auto;
+  width: auto;
+  height: 60px;
 }
 .recaptcha {
   width: 45%;
