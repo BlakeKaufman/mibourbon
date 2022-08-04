@@ -884,9 +884,6 @@ form .submitBtn {
     height: 100%;
     justify-content: start;
   }
-  .select {
-    height: 4vh;
-  }
 }
 
 @media screen and (orientation: landscape) and (max-height: 480px) {
@@ -906,9 +903,6 @@ form .submitBtn {
   }
   .checkbox {
     font-size: 1.5vw;
-  }
-  .select {
-    height: 10vh;
   }
   form .submitBtn {
     width: 20vw;
