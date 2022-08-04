@@ -499,7 +499,7 @@ nav li a {
 @media screen and (orientation: landscape) and (max-height: 430px) and (max-width: 915px) {
   .VarchasMain {
     width: 48vw;
-    margin: 18vh 0 0;
+    margin: 30vh 0 0;
     height: fit-content;
   }
   .hamburger {
@@ -511,6 +511,7 @@ nav li a {
   .MainBackground {
     height: 80vh;
     position: absolute;
+    margin-top: 14vh;
   }
   /* content */
   .content {
@@ -530,13 +531,10 @@ nav li a {
   }
 }
 @media screen and (orientation: landscape) and (max-height: 430px) and (max-width: 770px) {
-  .VarchasMain {
-    margin: 30vh 0 0;
-  }
   .MainBackground {
     height: 100vh;
     position: absolute;
-    top: 3vh;
+    top: -8vh;
   }
   .mobileNav a {
     line-height: 12vh;
