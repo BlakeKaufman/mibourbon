@@ -10,7 +10,7 @@ body {
   background: #00000070 0% 0% no-repeat padding-box;
   border: 1px solid #e8be4c;
   border-radius: 0;
-  padding: 0.5vw;
+  padding: 10px;
   margin-bottom: 2vh;
 }
 .button {
