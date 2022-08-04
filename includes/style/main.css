@@ -17,6 +17,12 @@ body {
   width: 13.5vw;
   margin: 0 auto;
 }
+@media screen and (max-width: 1000px) {
+  .border {
+    font-size: 30px;
+  }
+}
+
 /* scroll to top button style */
 #myBtn {
   display: none;
