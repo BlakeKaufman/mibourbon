@@ -57,7 +57,7 @@ body {
 /* content portion */
 .blog .container .content {
   display: inline-flex;
-  width: 100%
+  width: 100%;
 }
 .blog .container .content .left {
   width: 65%;
@@ -103,7 +103,7 @@ body {
   align-items: self-start;
   display: flex;
   flex-direction: column;
-  margin-left: 1.5vw;
+  margin-left: 10px;
   font-size: 1.5vw;
   text-align: left;
 }
