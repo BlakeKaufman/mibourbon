@@ -58,6 +58,7 @@ body {
 /* content portion */
 .blog .container .content {
   display: inline-flex;
+  width: 100%;
 }
 .blog .container .content .left {
   width: 65%;
