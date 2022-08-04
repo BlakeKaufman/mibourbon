@@ -105,9 +105,7 @@ nav li a {
 .dropdown {
   float: left;
   overflow: hidden;
-  width: 100%;
 }
-
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
@@ -196,6 +194,7 @@ nav li a {
   display: none;
   position: fixed;
   top: 104px;
+  overflow: scroll;
 }
 .mobileUl {
   height: 100%;
@@ -213,6 +212,7 @@ nav li a {
 }
 @media screen and (orientation: landscape) and (max-height: 430px) and (max-width: 770px) {
   .mobileNav a {
-    line-height: 10vh;
+    line-height: 12vh;
+    font-size: 4vw;
   }
 }
