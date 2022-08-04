@@ -11,7 +11,7 @@ body {
   margin-top: 20vh;
 }
 .blog .container {
-  width: 97%;
+  width: 95%;
   height: fit-content;
   margin: 0 auto;
 }
@@ -292,6 +292,9 @@ button {
   }
 }
 @media screen and (max-width: 450px) {
+  .blog .container{
+    width: 97%;
+  }
   .blog .container .navigation {
     flex-direction: column;
     height: 25vh;
