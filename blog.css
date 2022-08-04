@@ -57,6 +57,7 @@ body {
 /* content portion */
 .blog .container .content {
   display: inline-flex;
+  width: 100%
 }
 .blog .container .content .left {
   width: 65%;
@@ -292,9 +293,6 @@ button {
   }
 }
 @media screen and (max-width: 450px) {
-  .blog .container{
-    width: 98%;
-  }
   .blog .container .navigation {
     flex-direction: column;
     height: 25vh;
