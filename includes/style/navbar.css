@@ -213,6 +213,26 @@ nav li a {
   }
 } */
 
+/* scroll to top button style */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 13vh;
+  right: 1vw;
+  z-index: 2;
+  opacity: 0.9;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0;
+  width: 30px;
+}
+#myBtn img {
+  height: auto;
+  width: 100%;
+}
+/* nav */
+
 /* ractangle top */
 .main {
   width: 100%;
@@ -483,7 +503,7 @@ nav li a {
     display: none;
   }
   nav {
-    height: 120px;
+    height: 100px;
     border-top: none;
   }
   nav ul {
