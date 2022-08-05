@@ -916,7 +916,7 @@ form .submitBtn {
 }
 .newsAndEvents .background {
   width: 100vw;
-  height: auto;
+  height: -webkit-fill-available;
   position: absolute;
   object-fit: cover;
   object-position: center;
