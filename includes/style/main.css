@@ -24,6 +24,18 @@ body {
   }
 }
 /* scroll bars */
+/* main section  */
+/* ractangle top */
+
+.MainBackground {
+  width: 100vw;
+  height: 95%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  object-fit: cover;
+  object-position: 90%;
+}
 
 /* main picture */
 .main {
