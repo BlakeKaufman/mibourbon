@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/news_bck-2/news_bck.png");
+  background-image: url("/includes/images/news_bck-2/news_bck.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -58,15 +58,12 @@ body {
 }
 .team .barrel {
   width: 110%;
-  position: absolute;
-  bottom: -15px;
 }
 .team .position {
   color: #000;
   font-size: 22px;
   width: 100px;
   position: absolute;
-  bottom: 50px;
 }
 @media screen and (max-width: 770px) {
 }

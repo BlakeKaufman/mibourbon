@@ -444,3 +444,15 @@
 .borderZ {
   border-radius: 0;
 }
+
+/* scroll bars */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e8be4c;
+  border-radius: 10px;
+}
