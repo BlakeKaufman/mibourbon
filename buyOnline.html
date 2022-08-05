@@ -11,10 +11,33 @@
   </head>
   <body>
     <header>
+      <!-- main nav start -->
       <div class="rectangleTop"></div>
       <nav>
         <ul>
-          <li><a href="buyOnlineIndex.html">BUY ONLINE</a></li>
+          <li>
+            <a href="buyOnlineIndex.html"
+              ><div class="buyOnlineAnimation"></div
+            ></a>
+            <a class="BuyOnline" href="buyOnlineIndex.html">
+              <div class="navBuy">
+                <img
+                  class="backBuy"
+                  src="./includes/images/button.webp"
+                  alt=""
+                />
+                <img
+                  src="./includes/images/navBourbon.png"
+                  alt=""
+                  class="navBourbon"
+                />
+                <!-- <div class="liquidMask">
+                  <img class="liquid" src="./includes/images/liquid.svg" alt="">
+                </div> -->
+                <span class="buyOn">Buy Online</span>
+              </div>
+            </a>
+          </li>
           <li>
             <div class="dropdown d1">
               <a href="index.html#ourStory"
@@ -29,7 +52,7 @@
                   srcset=""
               /></a>
               <div class="dropdown-content" style="width: 12vw">
-                <a href="./team.html"
+                <a href="team.html"
                   ><img
                     class="glass"
                     src="./includes/images/glass_01.png"
@@ -77,6 +100,50 @@
           <li><a href="#">WHERE TO BUY</a></li>
           <li><a href="index.html#contact">CONTACT</a></li>
         </ul>
+        <!-- intermideate nav start -->
+        <div class="intMenu">
+          <ul class="intUl">
+            <li class="firstList">
+              <a href="buyOnlineIndex.html"
+                ><div class="buyOnlineAnimation"></div
+              ></a>
+              <a class="BuyOnline" href="buyOnlineIndex.html">
+                <div class="navBuy">
+                  <img
+                    class="backBuy"
+                    src="./includes/images/button.webp"
+                    alt=""
+                  />
+                  <img
+                    src="./includes/images/navBourbon.png"
+                    alt=""
+                    class="navBourbon"
+                  />
+                  <!-- <div class="liquidMask">
+                    <img class="liquid" src="./includes/images/liquid.svg" alt="">
+                  </div> -->
+                  <span class="buyOn">Buy Online</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="index.html"
+                ><img
+                  class="LogoImg"
+                  src="./includes/images/Logo/logo_icnn.png"
+                  alt="Logo"
+              /></a>
+            </li>
+            <li class="lastList">
+              <img
+                class="hamburger"
+                src="./includes/images/hamburger.svg"
+                alt="hamburger menu button"
+              />
+            </li>
+          </ul>
+        </div>
+        <!-- intermideate nav end -->
         <div class="mobilemenu">
           <a href="index.html"
             ><img
@@ -91,22 +158,22 @@
           />
         </div>
       </nav>
+      <nav class="mobileNav">
+        <ul class="mobileUl">
+          <li><a href="buyOnlineIndex.html">BUY ONLINE</a></li>
+          <li>
+            <a href="./index.html#ourStory"></a>
+          </li>
+          <li><a href="./team.html">TEAM</a></li>
+          <li><a href="index.html#newsAndEvents">NEWS&EVENTS</a></li>
+          <li><a href="./blog.html">BLOG</a></li>
+          <li><a href="whiskty.html">WHISKEY</a></li>
+          <li><a href="#">WHERE TO BUY</a></li>
+          <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav class="mobileNav">
-      <ul class="mobileUl">
-        <li><a href="buyOnlineIndex.html">BUY ONLINE</a></li>
-        <li>
-          <a href="./index.html#ourStory"></a>
-        </li>
-        <li><a href="./team.html">TEAM</a></li>
-        <li><a href="index.html#newsAndEvents">NEWS&EVENTS</a></li>
-        <li><a href="./blog.html">BLOG</a></li>
-        <li><a href="whiskty.html">WHISKEY</a></li>
-        <li><a href="#">WHERE TO BUY</a></li>
-        <li><a href="index.html#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-    <!-- nav bar end -->
+    <!-- main nav end -->
     <div class="buyOnline">
       <div class="container">
         <div class="content">
@@ -156,5 +223,6 @@
       </div>
     </footer>
     <script src="./navbar.js"></script>
+    <script src="./buyOnline.js"></script>
   </body>
 </html>

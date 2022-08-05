@@ -1,20 +1,21 @@
 "use strict";
 // Making the nav pop donw
-const menu = document.querySelector(".hamburger");
+const menu = document.querySelectorAll(".hamburger");
 let mobileNav = document.querySelector(".mobileNav");
 let moblileUl = document.querySelector(".mobileUl");
-
+let on = false;
+function display() {
+  if (on) mobileNav.style.display = "block";
+  else mobileNav.style.display = "none";
+  on = !on;
+}
 function switchNav() {
-  if (mobileNav.style.display === "none") {
-    mobileNav.style.display = "block";
-    moblileUl.style.display = "flex";
-  } else {
-    mobileNav.style.display = "none";
-    moblileUl.style.display = "none";
-  }
+  display();
 }
 
-menu.addEventListener("click", switchNav);
+menu.forEach((ham) => {
+  ham.addEventListener("click", switchNav);
+});
 
 // giving the dropdown arrow a change
 
