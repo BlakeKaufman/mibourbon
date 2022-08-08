@@ -1,7 +1,6 @@
 body {
   background-color: black;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 /* global values */
@@ -706,7 +705,7 @@ form .submitBtn {
 }
 .newsAndEvents .background {
   width: 100vw;
-  height: inherit;
+  height: auto;
   position: absolute;
   object-fit: cover;
   object-position: center;
@@ -840,6 +839,14 @@ form .submitBtn {
   .newsAndEvents .background {
     height: 100vh;
   }
+  /* .newsAndEvents .mainTitle {
+    font-size: 5vw;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin-bottom: 2vh;
+    text-align: center;
+  } */
   .newsAndEvents .content {
     height: 78vh;
     z-index: -1;
@@ -904,13 +911,13 @@ form .submitBtn {
   }
   .newsAndEvents .mainTitle {
     font-size: 5vw;
-    position: sticky;
+    /* position: sticky;
     top: 0;
     width: 100%;
     background: white;
     margin-bottom: 2vh;
     border-radius: 1vw;
-    text-align: center;
+    text-align: center; */
   }
   .newsAndEvents .container {
     margin-bottom: 2vh;
@@ -1010,6 +1017,7 @@ form .submitBtn {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left bottom;
+  padding-bottom: 20px;
 }
 #contact .contact {
   width: 100%;
@@ -1071,8 +1079,8 @@ form .submitBtn {
   height: 20%;
 }
 .varification .submitBtn {
-  width: 40%;
-  height: auto;
+  height: 40px;
+  width: auto;
 }
 .recaptcha {
   width: 45%;
@@ -1159,9 +1167,6 @@ form .submitBtn {
   #contact .checkbox {
     font-size: 2vw;
   }
-  .varification .submitBtn {
-    width: 30%;
-  }
 }
 @media screen and (max-width: 480px) {
   #contact .main {
@@ -1178,10 +1183,6 @@ form .submitBtn {
   }
   .heightTa {
     height: 16vh;
-  }
-
-  .varification .submitBtn {
-    width: 30vw;
   }
   #contact .contact .content {
     padding: 6vw;
