@@ -3,10 +3,19 @@
 const menu = document.querySelectorAll(".hamburger");
 let mobileNav = document.querySelector(".mobileNav");
 let moblileUl = document.querySelector(".mobileUl");
-let on = false;
+let on = true;
 function display() {
-  if (on) mobileNav.style.display = "block";
-  else mobileNav.style.display = "none";
+  if (on) {
+    mobileNav.style.display = "block";
+    mobileNav.style.animation = "dropNav 2s";
+  } else {
+    mobileNav.style.animation = "raiseNav 2s";
+  }
+  mobileNav.addEventListener("animationend", function () {
+    if (on) {
+      mobileNav.style.display = "none";
+    }
+  });
   on = !on;
 }
 function switchNav() {
