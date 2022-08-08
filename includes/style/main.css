@@ -44,7 +44,7 @@ body {
 .VarchasMain {
   width: 32vw;
   height: 79vh;
-  padding: 20vh 0 0 10vw;
+  padding: 24vh 0 0 10vw;
   display: flex;
   flex-direction: column;
   margin-bottom: 3vh;
@@ -98,7 +98,7 @@ body {
   bottom: 0;
   display: inline-flex;
   justify-content: space-between;
-  margin: 0 0 5vh 2vw;
+  margin: 0 0 2vh 2vw;
 }
 /* left side of the award section */
 .award .left {
@@ -151,10 +151,10 @@ body {
     padding-left: 4vw;
   }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 850px) {
   .MainBackground {
     position: unset;
-    height: 71vh;
+    height: 75vh;
     object-position: 72%;
   }
   .main {
