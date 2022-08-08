@@ -18,12 +18,9 @@ function display() {
   });
   on = !on;
 }
-function switchNav() {
-  display();
-}
 
 menu.forEach((ham) => {
-  ham.addEventListener("click", switchNav);
+  ham.addEventListener("click", display);
 });
 
 // giving the dropdown arrow a change

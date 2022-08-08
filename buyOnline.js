@@ -4,8 +4,8 @@
 const navLi = document.querySelectorAll(".buyOnlineAnimation");
 const BuyOnlineText = document.querySelectorAll(".buyOn");
 const liquid = document.querySelectorAll(".liquid");
-let BuyTextMove = true;
-function moveText() {
+
+function moveText(BuyTextMove) {
   if (BuyTextMove) {
     BuyOnlineText.forEach((text) => {
       text.style.top = "5px";
@@ -15,7 +15,6 @@ function moveText() {
     liquid.forEach((liq) => {
       liq.style.display = "block";
       liq.style.bottom = "0";
-      // liq.style.animation = "raiseLiquid 0.5s";
     });
   } else {
     BuyOnlineText.forEach((text) => {
@@ -25,24 +24,17 @@ function moveText() {
     liquid.forEach((liq) => {
       liq.style.display = "block";
       liq.style.bottom = "-23px";
-      // liq.style.animation = "dropliquid 0.5s";
-      // liq.addEventListener("animationend", function () {
-      //   if (BuyTextMove) {
-      //     liq.style.display = "none";
-      //   }
-      // });
     });
   }
-  BuyTextMove = !BuyTextMove;
 }
 navLi.forEach((nav) =>
   nav.addEventListener("mouseenter", function (e) {
-    moveText();
+    moveText(true);
   })
 );
 
 navLi.forEach((nav) =>
   nav.addEventListener("mouseout", function (e) {
-    moveText();
+    moveText(false);
   })
 );
