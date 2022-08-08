@@ -526,6 +526,7 @@ nav li a {
   top: 104px;
   overflow: scroll;
   z-index: 1;
+  animation: dropNav 2s;
 }
 .mobileUl {
   height: 100%;
@@ -546,4 +547,24 @@ nav li a {
   font-size: 4vw;
   line-height: 7vh;
   margin: 0 auto;
+}
+
+/* animations */
+
+@keyframes dropNav {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes raiseNav {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0;
+  }
 }

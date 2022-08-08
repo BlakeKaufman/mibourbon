@@ -4,6 +4,6 @@ body {
   padding: 0;
   border: 0 none;
   width: 100%;
-  font-size: 12px;
   box-sizing: border-box;
+  overflow-x: hidden;
 }

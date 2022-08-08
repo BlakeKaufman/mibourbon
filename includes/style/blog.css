@@ -13,7 +13,7 @@ body {
   justify-content: center;
 }
 .blog .container {
-  width: 90%;
+  width: 95%;
   height: fit-content;
   margin: 0 auto;
 }
@@ -61,13 +61,20 @@ body {
   display: inline-flex;
   width: 100%;
 }
+.blog .scrollContainer {
+  width: 100%;
+  height: 88vh;
+  overflow-y: scroll;
+}
 .blog .container .content .left {
-  width: 65%;
+  width: 70%;
 }
 .blog .container .content .right {
-  width: 35%;
+  width: 30%;
+  background: transparent linear-gradient(180deg, #000000f2 0%, #b68c2e 100%) 0%
+    0% no-repeat padding-box;
 }
-.blog .container .content .left h4 {
+.blog .postHeading {
   font-size: 3.5vw;
   color: white;
   margin: 0 0 2.5vh 0;
@@ -85,29 +92,31 @@ body {
   display: inline-flex;
   flex-wrap: wrap;
   padding: 0;
+  justify-content: space-evenly;
 }
 .blog .postcontainer .post {
   border: 1px solid #e8be4c;
-  background: black;
-  height: 11vw;
-  width: 25vw;
+  background: #000000d4 0% 0% no-repeat padding-box;
+  height: 17vw;
+  width: 29vw;
   display: inline-flex;
   align-items: center;
   padding: 0;
-  margin: 0 2vw 2vw 0;
+  margin: 0 0 2vw 0;
 }
 .blog .postcontainer .post img {
-  width: 10vw;
-  height: 6vw;
+  width: 50%;
+  height: 100%;
 }
 .blog .postcontainer .text {
   color: white;
-  align-items: self-start;
   display: flex;
   flex-direction: column;
-  margin-left: 1.5vw;
   font-size: 1.5vw;
   text-align: left;
+  height: 100%;
+  justify-content: space-evenly;
+  padding: 10px;
 }
 .blog .postcontainer .text .date {
   font-size: 1vw;
@@ -176,15 +185,15 @@ select {
 .warning {
   color: white;
   font-size: 1.25vw;
-  width: 50%;
+  width: 100%;
   margin-top: 2vh;
 }
 .imgContainer {
-  width: 129%;
+  width: 120%;
   position: relative;
 }
 .bourbon {
-  width: 12vw;
+  width: 10vw;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -262,7 +271,7 @@ button {
     font-size: 2.25vw;
   }
   .imgContainer {
-    width: 100%;
+    width: 125%;
   }
   .bourbon {
     width: 20vw;
@@ -274,24 +283,16 @@ button {
   .blog .container .content .left {
     width: 100%;
   }
-  .blog .postcontainer {
-    height: 67vh;
-    overflow: scroll;
-  }
   .blog .postcontainer .post {
     margin-right: 0;
     width: 100%;
     height: 30vw;
   }
-  .blog .postcontainer .post img {
-    width: 50vw;
-    height: 26vw;
-  }
   .blog .postcontainer .text .date {
-    font-size: 4vw;
+    font-size: 2vw;
   }
   .blog .postcontainer .text .desc {
-    font-size: 7.5vw;
+    font-size: 3vw;
   }
 }
 @media screen and (max-width: 450px) {
