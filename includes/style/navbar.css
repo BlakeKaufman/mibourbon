@@ -263,12 +263,13 @@ nav li a {
   right: 10px;
 }
 .liquid {
-  display: none;
+  display: block;
   width: 100%;
   height: 100%;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -23px;
+  transition: all 0.5s;
 }
 .liquidMask {
   height: 100%;
@@ -287,18 +288,6 @@ nav li a {
 .BuyOnline {
   position: absolute;
   top: 0;
-}
-.navBuy .buyOn:hover {
-  animation: rightNav 3s;
-  animation-iteration-count: 1;
-}
-@keyframes rightNav {
-  from {
-    top: 14px;
-  }
-  to {
-    top: 5px;
-  }
 }
 
 /* nav bars */
@@ -561,22 +550,5 @@ nav li a {
   }
   to {
     height: 0;
-  }
-}
-
-@keyframes raiseLiquid {
-  from {
-    bottom: -22px;
-  }
-  to {
-    bottom: 0px;
-  }
-}
-@keyframes dropliquid {
-  from {
-    bottom: 0;
-  }
-  to {
-    bottom: -22px;
   }
 }
