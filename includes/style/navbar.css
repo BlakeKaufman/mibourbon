@@ -254,7 +254,7 @@ nav li a {
   height: 90px;
   position: absolute;
   left: 10px;
-  top: -35px;
+  top: -39px;
 }
 .navBuy .buyOn {
   position: absolute;
@@ -263,25 +263,20 @@ nav li a {
   right: 10px;
 }
 .liquid {
+  display: none;
   width: 100%;
+  height: 100%;
   position: absolute;
-  right: 1px;
+  right: 0;
+  bottom: 0;
 }
 .liquidMask {
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 0;
-  -webkit-mask-image: radial-gradient(
-    circle,
-    black 50%,
-    rgba(0, 0, 0, 0.5) 50%
-  );
-
-  mask-image: url("../images/LiquidMask.svg");
-  /* -webkit-mask-repeat: no-repeat; */
-  /* mask-repeat: no-repeat;
-  mask-image: url("../images/LiquidMask.svg"); */
+  bottom: 0;
+  overflow: hidden;
+  border-radius: 50px;
 }
 .buyOnlineAnimation {
   width: 100%;
@@ -566,5 +561,22 @@ nav li a {
   }
   to {
     height: 0;
+  }
+}
+
+@keyframes raiseLiquid {
+  from {
+    bottom: -22px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+@keyframes dropliquid {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -22px;
   }
 }
