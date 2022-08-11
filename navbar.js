@@ -3,20 +3,21 @@
 const menu = document.querySelectorAll(".hamburger");
 let mobileNav = document.querySelector(".mobileNav");
 let moblileUl = document.querySelector(".mobileUl");
-let on = true;
+let on = "block";
 function display() {
-  if (on) {
+  if (on === "block") {
     mobileNav.style.display = "block";
     mobileNav.style.animation = "dropNav 2s";
+    on = "none";
   } else {
     mobileNav.style.animation = "raiseNav 2s";
+    on = "block";
   }
   mobileNav.addEventListener("animationend", function () {
-    if (on) {
+    if (on === "block") {
       mobileNav.style.display = "none";
     }
   });
-  on = !on;
 }
 
 menu.forEach((ham) => {
@@ -48,4 +49,18 @@ d2.addEventListener("mouseover", function () {
 d2.addEventListener("mouseout", function () {
   i2up.classList.add("active");
   i2d.classList.remove("active");
+});
+
+// making the mobile nav diapreer on window resize
+window.addEventListener("resize", function (e) {
+  if (window.innerWidth > 1180 && on === "none") {
+    mobileNav.style.animation = "raiseNav 2s";
+
+    mobileNav.addEventListener("animationend", function () {
+      if (on === "none") {
+        mobileNav.style.display = "none";
+        on = "block";
+      }
+    });
+  }
 });
