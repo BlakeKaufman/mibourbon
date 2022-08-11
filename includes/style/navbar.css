@@ -465,10 +465,13 @@ nav li a {
     display: block;
   }
   .hamburger {
-    display: block;
+    width: 55px;
     height: 90%;
+    display: block;
     margin-right: 10px;
     float: right;
+    background-color: #e8be4c;
+    border-radius: 8px;
   }
   .firstList {
     margin-left: 10px;
@@ -476,6 +479,9 @@ nav li a {
   }
   .lastList {
     width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
   }
   .intMenu .navBuy {
     top: 0;
@@ -507,7 +513,8 @@ nav li a {
   }
   .hamburger {
     display: block;
-    height: 5vh;
+    width: 55px;
+    height: 40px;
     margin-right: 4vw;
   }
   .rectangleTop {
@@ -548,6 +555,11 @@ nav li a {
   margin: 0 auto;
 }
 
+@media screen and (orientation: landscape) and (max-height: 430px) and (max-width: 915px) {
+  .mobileNav {
+    height: 75vh;
+  }
+}
 /* animations */
 
 @keyframes dropNav {
