@@ -28,10 +28,9 @@ function scrollToPosition(position) {
   let y =
     document.querySelector(`.${position}`).getBoundingClientRect().top +
     window.pageYOffset -
-    100;
+    80;
   if (position === "ourStory" || position === "contact") {
     mobileNav.style.display = "none";
-    moblileUl.style.display = "none";
   } else if (position === "barrels") {
     y =
       document.querySelector(`.${position}`).getBoundingClientRect().top +
